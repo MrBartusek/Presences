@@ -3,10 +3,15 @@
     "name": "Timeraa",
     "id": "223238938716798978"
   },
+  "contributors": [{
+    "name": "MrBartusek",
+    "id": "212988300137463809"
+  }],
   "service": "YouTube Music",
   "description": {
     "en": "A new music service with official albums, singles, videos, remixes, live performances and more for Android, iOS and desktop. It's all here.",
     "ro": "Un serviciu nou pentru muzică cu albume oficiale, videoclipuri, remix-uri, perfomanțe live și multe altele pentru Android, iOS și desktop. Toate sunt aici.",
+    "pl": "Wypróbuj nową aplikację do streamingu muzyki na telefonie i komputerze. Albumy, wideo i nie tylko. Znajdziesz tu wszystko.",
     "pt_BR": "Um novo serviço de música com albuns oficiais, singles, vídeos, remixes, apresentações ao vivo e mais para Android, iOS e desktop, está tudo aqui.",
     "fr": "Un nouveau service musical avec des albums officiels, des singles, des vidéos, des remixes, des performances en direct et plus encore pour Android, iOS et desktop. Tout est là.",
     "uk_UA": "Новий музична сервіс з офіційними альбомами, синглами, відео, реміксами, виступами у прямому ефірі та багато іншого для Android, iOS та настільних ПК. Тут все.",

@@ -57,7 +57,6 @@ function getTimestamps(
 }
 
 presence.on("UpdateData", async () => {
-  console.log(isEndlessMix());
   var title = (document.querySelector(
       ".ytmusic-player-bar.title"
     ) as HTMLElement).innerText,

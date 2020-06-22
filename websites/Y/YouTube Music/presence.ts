@@ -57,6 +57,7 @@ function getTimestamps(
 }
 
 presence.on("UpdateData", async () => {
+  console.log(isEndlessMix());
   var title = (document.querySelector(
       ".ytmusic-player-bar.title"
     ) as HTMLElement).innerText,
@@ -85,6 +86,8 @@ presence.on("UpdateData", async () => {
           : "play",
         smallImageText: video.paused
           ? (await strings).pause
+          : isEndlessMix()
+          ? "Endless Mix"
           : repeatMode == "ONE"
           ? "On loop"
           : repeatMode == "ALL"
@@ -103,3 +106,18 @@ presence.on("UpdateData", async () => {
     presence.setActivity(presenceData);
   } else presence.setActivity();
 });
+
+function isEndlessMix()
+{
+  const homepageSecondRow = document.querySelectorAll("ytmusic-carousel-shelf-renderer")[1];
+  const endlessMixID = homepageSecondRow ? homepageSecondRow
+    .querySelector("a") // First playlist from this row
+    .getAttribute("href")
+    .replace("watch?playlist=", "") : undefined;
+
+  const currentTrackUrl = document
+    .querySelector('a[data-sessionlink="feature=player-title"]')
+    .getAttribute("href");
+  
+  return endlessMixID ? currentTrackUrl.includes("list=" + endlessMixID) : false;
+}

@@ -1013,10 +1013,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/chrome@^0.0.140":
-  version "0.0.140"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.140.tgz#5e9677d6716e53808f49b7c85640f9538c96e386"
-  integrity sha512-qv4rcmQMBCFDNuDgQgzThyMli8PyKmP6co6ySZbIsLfdi0AZ78k1+jUXBv+VjYMDfsO5GKvm8WNruLInxOrEQA==
+"@types/chrome@^0.0.151":
+  version "0.0.151"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.151.tgz#5ff1fd0a2ce7bd25f5183c4157dce7fd2e9b2a01"
+  integrity sha512-mtnRyIpf50YxJmy7AIccf2bYhvI+Tr0078TPkR7naf1o2nCp7MXAh4nnJnSIXXyBnc3HQSu40ET+2B/B1Malhg==
   dependencies:
     "@types/filesystem" "*"
     "@types/har-format" "*"
